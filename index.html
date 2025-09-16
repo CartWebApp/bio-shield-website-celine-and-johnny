@@ -1,112 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Shield Repellent</title>
-    <style>
-        /* basic reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 20px;
-        }
-        /* Navbar Container */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #000000;
-            padding: 10px 20px;
-            color: rgb(255, 234, 0);
-        }
-        .navbar .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        } .navbar ul li a:hover {
-      color: #000000;
-    }
-
-    /* Hamburger Icon (mobile) */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle span {
-      height: 3px;
-      width: 25px;
-      background-color: white;
-      margin: 4px 0;
-      transition: 0.4s;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      .navbar ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-      }
-
-      .navbar ul.show {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-    }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bio Shield Repellent</title>
+  <link rel="stylesheet" href="css.css" />
+  </style>
 </head>
 <body>
-    <!-- Navbar HTML -->
-    <nav class="navbar">
-        <img src="images/logo.png" alt="Bio Shield Repellent Logo" width="50">
-        <div class="logo">Bio Shield Repellent</div>
-        
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <footer> <nav class="main-nav">
-            <a href="cart.html" class="link">Cart</a>
-            <a href="product.html" class="link">Products</a>
-            <a href="about.html" class="link">About</a>
-            <a href="contact.html" class="link">Contact</a>
-        </nav>
-    </footer>
-    <!-- JavaScript for Mobile Toggle -->
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('show');
-        }
-        </script>
-        
-</body>
 
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#" class="logo" aria-label="Bio Shield Repellent Home">
+      <img src="images/logo.png" alt="Bio Shield Repellent Logo" />
+      Bio Shield Repellent
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul id="nav-links">
+      <li><a href="cart.html" class="cart-icon" aria-label="Go to checkout"><img src=images/cart.png></a>
+
+        
+        </li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Image Section -->
+  <section class="hero" id="hero">
+    Welcome to Our Website
+  </section>
+
+  <main>
+    
+  </main>
+
+
+</body>
+<script src="java.js"></script>
 </html>

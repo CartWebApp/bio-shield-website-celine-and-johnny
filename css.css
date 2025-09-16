@@ -1,0 +1,155 @@
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+
+  }
+
+  /* Navbar Container */
+  nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(91, 0, 116);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    font-weight: bold;
+    background-color: rgb(4, 187, 83);
+    transition: background-color 0.3s ease;
+  }
+
+
+
+  /* Logo and text inline */
+  nav.navbar > a.logo {
+    display: flex;
+    align-items: center;
+    color: rgb(244, 240, 23);
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  nav.navbar > a.logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  nav.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  nav.navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 600;
+  }
+  nav.navbar ul li a:hover {
+    color: #000000;
+  }
+
+  /* Hamburger Icon (mobile) */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+    display: block;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav.navbar ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #222222;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
+    }
+    nav.navbar ul.show {
+      display: flex;
+    }
+    .menu-toggle {
+      display: flex;
+    }
+  }
+
+  /* Hero Styles */
+  body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  section.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(56, 166, 65);
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  section.hero.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+ 
+  main {
+    padding-top: 70px; 
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  .cart-icon {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    display: inline-block; /* ensures proper sizing */
+  }
+  
+  .cart-icon img {
+    width: 24px;  /* adjust size as you want */
+    height: auto; /* keeps aspect ratio */
+    vertical-align: middle; /* aligns nicely with text if any */
+  }
+  
+  .cart-icon:hover {
+    color: #0d7200;
+    cursor: pointer;
+  }
+
+ 
