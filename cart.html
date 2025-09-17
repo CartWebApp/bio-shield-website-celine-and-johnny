@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="home.css"/>
 </head>
 <body>
     <h1>Your Shopping Cart</h1>
@@ -20,7 +21,7 @@
             <tr>
                 <td>Product 1</td>
                 <td><input type="number" value="1" min="1" onchange="updateTotal()"></td>
-                <td>$10.00</td>
+                <td>$67.67</td>
                 <td class="total">$10.00</td>
             </tr>
             <tr>
@@ -34,22 +35,8 @@
     <h2>Total: <span id="grandTotal">$25.00</span></h2>
     <button>Checkout</button>
 
-    <script>
-        function updateTotal() {
-            const rows = document.querySelectorAll('tbody tr');
-            let grandTotal = 0;
-
-            rows.forEach(row => {
-                const quantity = row.querySelector('input[type="number"]').value;
-                const price = parseFloat(row.cells[2].textContent.replace('$', ''));
-                const total = quantity * price;
-                row.querySelector('.total').textContent = '$' + total.toFixed(2);
-                grandTotal += total;
-            });
-
-            document.getElementById('grandTotal').textContent = '$' + grandTotal.toFixed(2);
-        }
-    </script>
+    
 </body>
 </body>
+<script src="home.js"></script>
 </html>

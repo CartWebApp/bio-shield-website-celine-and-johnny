@@ -1,35 +1,31 @@
-/* basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body {
-    font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-
-    line-height: 1.6;
-    background-color: #a1eef3;
-    color: #000000;
-
+      font-family: cursive,;
+      line-height: 1.6;
+      background-color: #a1eef3;
+      color: #000000;
   }
 
   /* Navbar Container */
   nav.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center align the contents */
     align-items: center;
     color: rgb(91, 0, 116);
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
+    height: 90px;
     z-index: 1000;
     font-weight: bold;
     background-color: rgb(4, 187, 83);
     transition: background-color 0.3s ease;
   }
-
-
 
   /* Logo and text inline */
   nav.navbar > a.logo {
@@ -41,8 +37,8 @@
   }
 
   nav.navbar > a.logo img {
-    width: 50px;
-    height: auto;
+      width: 70px;
+      height: auto;
   }
 
   nav.navbar ul {
@@ -140,10 +136,12 @@
     padding: 5px 10px;
     transition: color 0.3s;
     display: inline-block;
+    text-align: right;
+    border: px solid transparent;
   }
   
   .cart-icon img {
-    width: 30px; 
+    width: 0px; 
     height: auto; 
     vertical-align: middle;
   }
@@ -184,3 +182,26 @@
   footer a:hover {
     text-decoration: underline;
   }
+  .cta-button {
+    padding: 1rem;
+    border: 1px solid black;
+    color: rgb(0, 225, 0);
+    text-decoration:none;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .cta-button:hover {
+    padding: 1rem;
+    border: 1px solid black;
+    color: rgb(225, 0, 0);
+    cursor: pointer;
+    transition: color 0.3s;
+    background-color: white;
+    border-radius: 20px;
+  }
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
