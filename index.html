@@ -8,47 +8,52 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <a href="#" class="logo" aria-label="Bio Shield Repellent Home">
-      Bio Shield Repellent
-      <img src="images/logo.png" alt="Bio Shield Repellent Logo" />
-    </a>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="logo-wrapper" aria-label="Home">
+        <img src="images/logo.png" alt="Bio Shield Repellent Logo" class="logo-img" />
+        <span class="logo-text">Bio Shield Repellent</span>
+      </a>
 
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-<br>
-    <ul id="nav-links">
-      <li><a href="product.html">Products</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cart.html" class="cart-icon" aria-label="Go to checkout"><img src=images/cart.png></a>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        
+      <ul id="nav-links" class="nav-links">
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="cart.html" class="cart-icon" aria-label="Go to checkout">
+            <img src="images/cart.png" alt="Cart" />
+          </a>
         </li>
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hero Image Section -->
+  <!-- Hero Section -->
   <section class="hero" id="hero">
-    <section class="hero-content">
+    <div class="hero-content">
       <h1 class="hero-text">Your Shield Against Nature’s Pests.</h1>
       <p class="hero-text">Protect yourself and your loved ones with Bio Shield Repellent—safe, effective, and eco-friendly.</p>
-     <br>
       <a href="product.html" class="cta-button">Shop Now</a>
-    </section>
+    </div>
   </section>
 
+  <!-- Main Content -->
   <main>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
   </main>
 
-<footer>
+  <!-- Footer -->
+  <footer>
     <p>&copy; 2024 Bio Shield Repellent. All rights reserved.</p>
     <a id="contact" href="contact.html">Contact</a>
   </footer>
+
+  <script src="home.js"></script>
 </body>
-<script src="home.js"></script>
 </html>
