@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="home.css"/>
+    <title>Faux-Cart Demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="faux-cart.js"></script>
 </head>
-<body>
-    <h1>Your Shopping Cart</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Product 1</td>
-                <td><input type="number" value="1" min="1" onchange="updateTotal()"></td>
-                <td>$67.67</td>
-                <td class="total">$10.00</td>
-            </tr>
-            <tr>
-                <td>Product 2</td>
-                <td><input type="number" value="1" min="1" onchange="updateTotal()"></td>
-                <td>$15.00</td>
-                <td class="total">$15.00</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Total: <span id="grandTotal">$25.00</span></h2>
-    <button>Checkout</button>
 
-    
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About</a>
+
+    </nav>
+    <main>
+        <header>
+            <h1>Faux Cart Demo</h1>
+            <p>Faux Cart is a JavaScript project designed to emulate shopping cart behavior on static websites. It uses
+                local storage to emulate server side functionality.</p>
+        </header>
+        <h2>Your Cart</h2>
+        
+        <div id="cart">
+
+            
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Bio Shield Repellent. All rights reserved.</p>
+        <a id="contact" href="contact.html">Contact</a>
+    </footer>
+
 </body>
-</body>
-<script src="home.js"></script>
+
 </html>

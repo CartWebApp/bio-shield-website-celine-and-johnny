@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products</title>
-    <link rel="stylesheet" href="demo.css"/>
+    <title>Faux-Cart Demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="faux-cart.js"></script>
 </head>
+
 <body>
-    <h1>Our Products</h1>
-    <ul>
-        <li>Product 1: Bio Shield Repellent Spray</li>
-        <li>Product 2: Bio Shield Insect Repellent Wipes</li>
-        <li>Product 3: Bio Shield Mosquito Nets</li>
-        <li>Product 4: Bio Shield Outdoor Repellent Candles</li>
-        <li>Product 5: Bio Shield Repellent Lotion</li>
-        <li>Product 6: Bio Shield Bug Zapper</li>
-    </ul>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart<span id="cartItemCount"></span></a>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Faux Cart Demo</h1>
+            <p>Faux Cart is a JavaScript project designed to emulate shopping cart behavior on static websites. It uses
+                local storage to emulate server side functionality.</p>
+        </header>
+        <h2>Products</h2>
+        <section id="products">
+
+            <div class="product">
+                <img src="" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Repellent Spray</h3>
+                <p class="prodDesc">All about product 01</p>
+                <span class="prodPrice">1.25</span><a href="" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="images/wipes.png" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Repellent Wipes</h3>
+                <p class="prodDesc">All about product 02</p>
+                <span class="prodPrice">10.00</span><a href="" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Repellent Candles</h3>
+                <p class="prodDesc">All about product 03</p>
+                <span class="prodPrice">3.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Bug Net</h3>
+                <p class="prodDesc">All about product 04</p>
+                <span class="prodPrice">4.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Repellent Lotion</h3>
+                <p class="prodDesc">All about product 05</p>
+                <span class="prodPrice">5.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Bug Zapper</h3>
+                <p class="prodDesc">All about product 06</p>
+                <span class="prodPrice">6.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 Bio Shield Repellent. All rights reserved.</p>
+        <a id="contact" href="contact.html">Contact</a>
+    </footer>
+
+
 </body>
-<script src="faux-cart.js"></script>
+
 </html>
