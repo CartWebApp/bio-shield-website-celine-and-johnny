@@ -1,74 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faux-Cart Demo</title>
+    <title>Bio Shield Products - Premium Natural Pest Protection</title>
+    <meta name="description" content="Shop our complete range of Bio Shield natural repellent products including sprays, wipes, candles, and more for effective pest protection.">
     <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="faux-cart.js"></script>
 </head>
-
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cart.html">Cart<span id="cartItemCount"></span></a>
-    </nav>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo-wrapper" aria-label="Bio Shield Repellent Home">
+                <img src="images/logo.png" alt="Bio Shield Repellent Logo" class="logo-img" />
+                <span class="logo-text">Bio Shield</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" aria-label="Go to homepage">Home</a></li>
+                <li><a href="about.html" aria-label="Learn about us">About</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link" aria-label="View shopping cart">
+                        <img src="images/cart.png" alt="Shopping Cart" class="cart-icon" />
+                        <span class="cart-text">Cart</span>
+                        <span id="cartItemCount" class="cart-count" aria-live="polite"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="page-hero">
+            <h1>Premium Natural Protection</h1>
+            <p>Discover our complete range of eco-friendly pest repellent solutions</p>
+        </section>
+    </header>
 
     <main>
-        <header>
-            <h1>Faux Cart Demo</h1>
-            <p>Faux Cart is a JavaScript project designed to emulate shopping cart behavior on static websites. It uses
-                local storage to emulate server side functionality.</p>
-        </header>
-        <h2>Products</h2>
-        <section id="products">
+        <section class="products-section">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-description">Choose from our carefully crafted collection of natural repellent products, designed to keep you protected while being gentle on the environment.</p>
+            
+            <section id="products" class="products-grid">
+                <article class="product">
+                    <img src="images/spray.png" alt="Bio Shield Repellent Spray - Natural protection in convenient spray form" class="prodImage">
+                    <h3 class="prodName">Repellent Spray</h3>
+                    <p class="prodDesc">Fast-acting natural spray formula provides instant protection against mosquitoes, ticks, and other biting insects. Perfect for outdoor activities and travel.</p>
+                    <footer class="product-footer">
+                        <span class="prodPrice" aria-label="Price: $12.25">12.25</span>
+                        <a href="#" class="addToCart prodBtn" aria-label="Add Repellent Spray to cart">Add to Cart</a>
+                    </footer>
+                </article>
 
-            <div class="product">
-                <img src="" alt="Demo Image" class="prodImage">
-                <h3 class="prodName">Repellent Spray</h3>
-                <p class="prodDesc">All about product 01</p>
-                <span class="prodPrice">1.25</span><a href="" class="addToCart prodBtn">Add to Cart</a>
-            </div>
-            <div class="product">
-                <img src="images/wipes.png" alt="Demo Image" class="prodImage">
-                <h3 class="prodName">Repellent Wipes</h3>
-                <p class="prodDesc">All about product 02</p>
-                <span class="prodPrice">10.00</span><a href="" class="addToCart prodBtn">Add to Cart</a>
-            </div>
-            <div class="product">
-                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
-                <h3 class="prodName">Repellent Candles</h3>
-                <p class="prodDesc">All about product 03</p>
-                <span class="prodPrice">3.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
-            </div>
-            <div class="product">
-                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
-                <h3 class="prodName">Bug Net</h3>
-                <p class="prodDesc">All about product 04</p>
-                <span class="prodPrice">4.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
-            </div>
-            <div class="product">
-                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
-                <h3 class="prodName">Repellent Lotion</h3>
-                <p class="prodDesc">All about product 05</p>
-                <span class="prodPrice">5.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
-            </div>
-            <div class="product">
-                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
-                <h3 class="prodName">Bug Zapper</h3>
-                <p class="prodDesc">All about product 06</p>
-                <span class="prodPrice">6.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
-            </div>
+                <article class="product">
+                    <img src="images/wipes.png" alt="Bio Shield Repellent Wipes - Convenient portable protection" class="prodImage">
+                    <h3 class="prodName">Repellent Wipes</h3>
+                    <p class="prodDesc">Convenient individually wrapped wipes perfect for on-the-go protection. Gentle on skin with natural ingredients and refreshing scent.</p>
+                    <footer class="product-footer">
+                        <span class="prodPrice" aria-label="Price: $8.50">8.50</span>
+                        <a href="#" class="addToCart prodBtn" aria-label="Add Repellent Wipes to cart">Add to Cart</a>
+                    </footer>
+                </article>
 
+                <article class="product">
+                    <img src="images/candles.png" alt="Bio Shield Repellent Candles - Ambient protection for outdoor spaces" class="prodImage">
+                    <h3 class="prodName">Repellent Candles</h3>
+                    <p class="prodDesc">Create a protective barrier around your outdoor space with our natural repellent candles. Long-lasting burn time with pleasant citronella scent.</p>
+                    <footer class="product-footer">
+                        <span class="prodPrice" aria-label="Price: $15.99">15.99</span>
+                        <a href="#" class="addToCart prodBtn" aria-label="Add Repellent Candles to cart">Add to Cart</a>
+                    </footer>
+                </article>
+
+                <article class="product">
+                    <img src="images/net.png" alt="Bio Shield Bug Net - Physical protection barrier" class="prodImage">
+                    <h3 class="prodName">Bug Net</h3>
+                    <p class="prodDesc">Ultra-fine mesh protection for camping, gardening, or outdoor dining. Lightweight, portable, and reusable physical barrier against insects.</p>
+                    <footer class="product-footer">
+                        <span class="prodPrice" aria-label="Price: $24.99">24.99</span>
+                        <a href="#" class="addToCart prodBtn" aria-label="Add Bug Net to cart">Add to Cart</a>
+                    </footer>
+                </article>
+
+                <article class="product">
+                    <img src="images/lotion.png" alt="Bio Shield Repellent Lotion - Long-lasting moisturizing protection" class="prodImage">
+                    <h3 class="prodName">Repellent Lotion</h3>
+                    <p class="prodDesc">Moisturizing lotion with natural repellent properties. Non-greasy formula provides long-lasting protection while nourishing your skin.</p>
+                    <footer class="product-footer">
+                        <span class="prodPrice" aria-label="Price: $18.75">18.75</span>
+                        <a href="#" class="addToCart prodBtn" aria-label="Add Repellent Lotion to cart">Add to Cart</a>
+                    </footer>
+                </article>
+
+                <article class="product">
+                    <img src="images/zapper.png" alt="Bio Shield Bug Zapper - Electronic pest control device" class="prodImage">
+                    <h3 class="prodName">Bug Zapper</h3>
+                    <p class="prodDesc">Eco-friendly electronic bug zapper for outdoor use. Solar-powered with LED attraction technology for chemical-free pest control around your home.</p>
+                    <footer class="product-footer">
+                        <span class="prodPrice" aria-label="Price: $45.99">45.99</span>
+                        <a href="#" class="addToCart prodBtn" aria-label="Add Bug Zapper to cart">Add to Cart</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="benefits-section">
+            <h2>Why Choose Bio Shield?</h2>
+            <ul class="benefits-list">
+                <li class="benefit-item">
+                    <h3>Natural Ingredients</h3>
+                    <p>All our products use plant-based, eco-friendly ingredients that are safe for your family and pets.</p>
+                </li>
+                <li class="benefit-item">
+                    <h3>Proven Effectiveness</h3>
+                    <p>Scientifically tested formulations that provide reliable protection against a wide range of insects.</p>
+                </li>
+                <li class="benefit-item">
+                    <h3>Long-Lasting Protection</h3>
+                    <p>Extended protection periods mean fewer applications and better value for your investment.</p>
+                </li>
+            </ul>
         </section>
     </main>
+
     <footer>
-        <p>&copy;2024 Bio Shield Repellent. All rights reserved.</p>
-        <a id="contact" href="contact.html">Contact</a>
+        <p>&copy; 2024 Bio Shield Repellent. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="contact.html" id="contact">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
     </footer>
-
-
 </body>
-
 </html>

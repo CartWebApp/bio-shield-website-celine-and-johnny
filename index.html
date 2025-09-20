@@ -3,31 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bio Shield Repellent</title>
+  <title>Bio Shield Repellent - Your Shield Against Nature's Pests</title>
+  <meta name="description" content="Protect yourself with Bio Shield Repellent - safe, effective, and eco-friendly pest protection for you and your loved ones.">
   <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header & Navigation -->
   <header>
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <a href="index.html" class="logo-wrapper" aria-label="Home">
-        <img src="images/logo.png" alt="Bio Shield Repellent Logo" class="logo-img" />
-        <span class="logo-text">Bio Shield Repellent</span>
+      <a href="index.html" class="logo-wrapper" aria-label="Bio Shield Home">
+        <img src="images/logo.png" alt="Bio Shield Logo" class="logo-img" />
+        <span class="logo-text">Bio Shield</span>
       </a>
 
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
 
       <ul id="nav-links" class="nav-links">
-        <li><a href="product.html">Products</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="product.html" aria-label="View our products">Products</a></li>
+        <li><a href="about.html" aria-label="Learn about us">About</a></li>
         <li>
-          <a href="cart.html" class="cart-icon" aria-label="Go to checkout">
-            <img src="images/cart.png" alt="Cart" />
+          <a href="cart.html" class="cart-icon" aria-label="View shopping cart">
+            <img src="images/cart.png" alt="Shopping Cart" />
+            <span class="cart-text">Cart</span>
           </a>
         </li>
       </ul>
@@ -36,22 +41,51 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1 class="hero-text">Your Shield Against Nature’s Pests.</h1>
-      <p class="hero-text">Protect yourself and your loved ones with Bio Shield Repellent—safe, effective, and eco-friendly.</p>
-      <a href="product.html" class="cta-button">Shop Now</a>
-    </div>
+    <article class="hero-content">
+      <h1 class="hero-title">Your Shield Against Nature's Pests</h1>
+      <p class="hero-description">Protect yourself and your loved ones with Bio Shield Repellent—safe, effective, and eco-friendly pest protection that works.</p>
+      <a href="product.html" class="cta-button" aria-label="Shop Bio Shield products">Shop Now</a>
+    </article>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2 class="features-title">Why Choose Bio Shield?</h2>
+    <ul class="features-list">
+      <li class="feature-item">
+        <h3 class="feature-title">Safe & Natural</h3>
+        <p class="feature-description">Made with eco-friendly ingredients that are safe for your family and pets.</p>
+      </li>
+      <li class="feature-item">
+        <h3 class="feature-title">Long-Lasting Protection</h3>
+        <p class="feature-description">Advanced formula provides hours of effective protection against insects.</p>
+      </li>
+      <li class="feature-item">
+        <h3 class="feature-title">Pleasant Scent</h3>
+        <p class="feature-description">Unlike harsh chemicals, our repellent has a refreshing, natural fragrance.</p>
+      </li>
+    </ul>
   </section>
 
   <!-- Main Content -->
   <main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
+    <section class="intro">
+      <h2>Premium Natural Protection</h2>
+      <p>Bio Shield Repellent combines cutting-edge science with nature's best ingredients to create a powerful yet gentle protection against mosquitoes, ticks, and other biting insects. Our carefully crafted formula ensures you can enjoy the outdoors without worry, whether you're hiking, camping, gardening, or simply relaxing in your backyard.</p>
+      
+      <h3>Perfect for Every Adventure</h3>
+      <p>From family picnics to wilderness expeditions, Bio Shield adapts to your lifestyle. Our non-greasy, fast-absorbing formula won't leave residue on your skin or clothing, making it the ideal choice for active individuals and families who demand both performance and comfort.</p>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Bio Shield Repellent. All rights reserved.</p>
-    <a id="contact" href="contact.html">Contact</a>
+    <nav class="footer-nav">
+      <a href="contact.html" id="contact">Contact Us</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
   </footer>
 
   <script src="home.js"></script>
