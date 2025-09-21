@@ -8,46 +8,33 @@
 </head>
 <body>
     <h1>Contact Us</h1>
-    <form action="/submit-form" method="POST">
-
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
-        
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-       
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</body>
-
-</html>
-<main>
 
     <!-- Contact Info and Form Section -->
-    <section aria-labelledby="contact-info">
-      <address>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-        <p><strong>(03) 9429 9736</strong></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
+     <section class="contact-header">
+            <address>
+        <p>Welcome to our contact page!</p>
       </address>
 
       <article>
-        <p><strong>Our Availability...</strong></p>
-        <p>To check our kitchen menu availability, please visit our <a href="#">Sweet Studio</a> page.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-        <p>Before contacting us below, check out our product and <a href="#">FAQ pages</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
+        <p><strong>We are here to help!</strong></p>
+        <p>We are looking forward to hear from you and answer any questions that you may have. Use the contact form below to email us with your questions or if you have any comments. We will respond to your questions as soon as possible! You may also join us by filling out the form to stay updated for more news and our products.</p>
       </article>
+    </section>
+
+<main>    
+    <section aria-labelledby="contact-info">
+      <!-- <address>
+        <p>Welcome to our contact page!</p>
+      </address>
+
+      <article>
+        <p><strong>We are here to help!</strong></p>
+        <p>We are looking forward to hear from you and answer any questions that you may have. Use the contact form below to email us with your questions or if you have any comments. We will respond to your questions as soon as possible! You may also join us by filling out the form to stay updated for more news and our products.</p>
+      </article> -->
 
       <form action="/submit-form" method="POST">
         <fieldset>
-          <legend>Send Us a Message</legend>
+          <h2>Send Us a Message</h2>
 
           <section class="form-group">
             <label for="first-name">First Name <span style="color: red">*</span></label>
@@ -75,9 +62,9 @@
     </section>
 
     <!-- Sidebar Newsletter -->
-    <aside>
+    <aside class="Join-us-content">
       <h2>Stay in touch!</h2>
-      <p>Fill in your details below to receive seasonal news, new product info &amp; updates.</p>
+      <p>Fill in your details below to receive news, new product info &amp; updates.</p>
 
       <form>
         <input type="text" placeholder="First Name" required>
