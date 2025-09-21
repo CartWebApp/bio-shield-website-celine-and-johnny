@@ -3,94 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css"/>
+    <title>Contact Bio Shield Repellent - Get in Touch</title>
+    <meta name="description" content="Contact Bio Shield Repellent for questions about natural pest protection, product support, or wholesale inquiries. We're here to help!">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="faux-cart.js"></script>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <form action="/submit-form" method="POST">
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo-wrapper" aria-label="Bio Shield Repellent Home">
+                <img src="images/logo.png" alt="Bio Shield Repellent Logo" class="logo-img" />
+                <span class="logo-text">Bio Shield</span>
+            </a>
 
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
-        
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-       
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-label="Go to homepage">Home</a></li>
+                <li><a href="product.html" aria-label="View our products">Products</a></li>
+                <li><a href="about.html" aria-label="Learn about us">About</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link" aria-label="View shopping cart">
+                        <img src="images/cart.png" alt="Shopping Cart" class="cart-icon" />
+                        <span class="cart-text">Cart</span>
+                        <span id="cartItemCount" class="cart-count" aria-live="polite"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-        <button type="submit">Send Message</button>
-    </form>
-</body>
+      </header>
+      
+      <section class="page-hero">
+          <h1>Contact Us</h1>
+          <p>Have questions about our natural pest protection products? We're here to help!</p>
+      </section>
+      <main class="contact-main">
+        <section class="contact-content">
+            <!-- Contact Information -->
+            <article class="contact-info" aria-labelledby="contact-info-heading">
+                <h2 id="contact-info-heading">Get in Touch</h2>
+                <address class="contact-details">
+                    <p>At Bio Shield Repellent, we're committed to providing exceptional customer service and support. Whether you have questions about our natural ingredients, need help choosing the right product, or want to share feedback about your experience, our knowledgeable team is ready to assist you.</p>
+                    
+                    <p>Our customer service representatives are trained in entomology and natural product science, ensuring you receive accurate, helpful information about pest protection and our eco-friendly formulations.</p>
+                    
+                    <section class="contact-methods">
+                        <h3>📞 Phone Support</h3>
+                        <p><strong>(555) 123-SHIELD</strong> | <strong>(555) 123-7443</strong></p>
+                        <p>Monday - Friday: 8:00 AM - 7:00 PM EST<br>
+                           Saturday: 9:00 AM - 5:00 PM EST<br>
+                           Sunday: Closed</p>
 
-</html>
-<main>
+                        <h3>📧 Email Support</h3>
+                        <p><strong>support@bioshieldrepellent.com</strong></p>
+                        <p>We typically respond within 24 hours</p>
 
-    <!-- Contact Info and Form Section -->
-    <section aria-labelledby="contact-info">
-      <address>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-        <p><strong>(03) 9429 9736</strong></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-      </address>
+                        <h3>📍 Mailing Address</h3>
+                        <p>Bio Shield Repellent<br>
+                           Natural Protection Division<br>
+                           1247 Green Valley Drive<br>
+                           Boulder, CO 80301</p>
+                    </section>
+                </address>
 
-      <article>
-        <p><strong>Our Availability...</strong></p>
-        <p>To check our kitchen menu availability, please visit our <a href="#">Sweet Studio</a> page.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-        <p>Before contacting us below, check out our product and <a href="#">FAQ pages</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
-      </article>
+                <article class="faq-preview">
+                    <h3>Quick Answers...</h3>
+                    <p>Looking for immediate help? Visit our <a href="#faq" class="link-highlight">Frequently Asked Questions</a> page for instant answers to common questions about application, safety, ingredients, and effectiveness.</p>
+                    
+                    <p>Our FAQ covers everything from "How long does protection last?" to "Is Bio Shield safe for pregnant women?" and "What insects does it repel?" You'll find detailed information about proper application techniques, storage recommendations, and tips for maximum effectiveness.</p>
+                    
+                    <p>Before reaching out, also check our <a href="product.html" class="link-highlight">Product Information pages</a> where you'll find comprehensive details about each Bio Shield formulation, including active ingredients, recommended uses, and application instructions.</p>
+                </article>
+            </article>
 
-      <form action="/submit-form" method="POST">
-        <fieldset>
-          <legend>Send Us a Message</legend>
+            <!-- Contact Form -->
+            <article class="contact-form-section">
+                <form action="/submit-form" method="POST" class="contact-form" id="contactForm">
+                    <fieldset>
+                        <legend>Send Us a Message</legend>
 
-          <section class="form-group">
-            <label for="first-name">First Name <span style="color: red">*</span></label>
-            <input type="text" id="first-name" name="first-name" required>
-          </section>
+                        <section class="form-row">
+                            <section class="form-group">
+                                <label for="first-name">First Name <span class="required">*</span></label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </section>
 
-          <section class="form-group">
-            <label for="last-name">Last Name <span style="color: red">*</span></label>
-            <input type="text" id="last-name" name="last-name" required>
-          </section>
+                            <section class="form-group">
+                                <label for="last-name">Last Name <span class="required">*</span></label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </section>
+                        </section>
 
-          <section class="form-group">
-            <label for="email">Email <span style="color: red">*</span></label>
-            <input type="email" id="email" name="email" required>
-          </section>
+                        <section class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </section>
 
-          <section class="form-group">
-            <label for="message">Message <span style="color: red">*</span></label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </section>
+                        <section class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </section>
 
-          <button type="submit">Send Message</button>
-        </fieldset>
-      </form>
-    </section>
+                        <section class="form-group">
+                            <label for="inquiry-type">Type of Inquiry <span class="required">*</span></label>
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">Please select...</option>
+                                <option value="product-question">Product Question</option>
+                                <option value="ingredient-info">Ingredient Information</option>
+                                <option value="application-help">Application Help</option>
+                                <option value="safety-concern">Safety Concern</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="feedback">Product Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </section>
 
-    <!-- Sidebar Newsletter -->
-    <aside>
-      <h2>Stay in touch!</h2>
-      <p>Fill in your details below to receive seasonal news, new product info &amp; updates.</p>
+                        <section class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      placeholder="Please provide details about your question or concern. Include any relevant information such as which product you're asking about, your intended use, or any specific symptoms if reporting a safety concern."></textarea>
+                        </section>
 
-      <form>
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <button type="submit">JOIN US</button>
-      </form>
+                        <section class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                I'd like to receive updates about new products and natural pest protection tips
+                            </label>
+                        </section>
 
-      <p class="privacy-note">
-        We respect your privacy and will never share your details with external parties.
-      </p>
-    </aside>
-  </main>
+                        <button type="submit" class="submit-button">Send Message</button>
+                        
+                        <p class="form-note">
+                            <span class="required">*</span> Required fields. We typically respond within 24 hours during business days.
+                        </p>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
 
+        <!-- Sidebar Newsletter -->
+        <aside class="newsletter-sidebar">
+            <section class="newsletter-signup">
+                <h2>Stay Protected & Informed!</h2>
+                <p>Join our community of nature-loving families and receive exclusive access to seasonal protection tips, new product launches, natural pest control insights, and special offers delivered straight to your inbox.</p>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <section class="form-group">
+                        <input type="text" placeholder="First Name" name="newsletter-first-name" required>
+                    </section>
+                    <section class="form-group">
+                        <input type="text" placeholder="Last Name" name="newsletter-last-name" required>
+                    </section>
+                    <section class="form-group">
+                        <input type="email" placeholder="Email Address" name="newsletter-email" required>
+                    </section>
+                    <button type="submit" class="newsletter-button">JOIN OUR COMMUNITY</button>
+                </form>
+
+                <p class="privacy-note">
+                    🔒 We respect your privacy and will never share your details with external parties. You can unsubscribe at any time with one click.
+                </p>
+            </section>
+
+            <section class="contact-hours">
+                <h3>Customer Service Hours</h3>
+                <ul class="hours-list">
+                    <li><strong>Monday - Friday:</strong> 8:00 AM - 7:00 PM EST</li>
+                    <li><strong>Saturday:</strong> 9:00 AM - 5:00 PM EST</li>
+                    <li><strong>Sunday:</strong> Closed</li>
+                </ul>
+                <p class="response-time">💬 Email responses within 24 hours</p>
+                <p class="emergency-note">For urgent safety concerns, please call our 24/7 emergency line: <strong>(555) 911-SAFE</strong></p>
+            </section>
+
+            <section class="social-links">
+                <h3>Follow Us</h3>
+                <p>Stay connected for daily tips, customer stories, and natural protection insights:</p>
+                <ul class="social-list">
+                    <li>🌱 <a href="#" class="social-link">Facebook - Bio Shield Community</a></li>
+                    <li>📸 <a href="#" class="social-link">Instagram - @bioshieldrepellent</a></li>
+                    <li>🐦 <a href="#" class="social-link">Twitter - @BioshieldNatural</a></li>
+                    <li>📺 <a href="#" class="social-link">YouTube - Natural Protection Tips</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bio Shield Repellent. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="contact.html" id="contact" class="active">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const firstName = formData.get('first-name');
+            const inquiryType = formData.get('inquiry-type');
+            
+            // Simple form validation feedback
+            alert(`Thank you, ${firstName}! Your ${inquiryType} inquiry has been received. We'll respond within 24 hours to the email address you provided.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Newsletter form handling
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const firstName = formData.get('newsletter-first-name');
+            
+            alert(`Welcome to the Bio Shield community, ${firstName}! You'll receive a confirmation email shortly with your first natural protection tips.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Cart count update
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartTotals();
+        });
+    </script>
 </body>
 </html>
