@@ -1167,8 +1167,8 @@ header {
     justify-content: center;
     font-size: 0.8em;
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -3px;
+    right: 10px;
 }
 
 .cart-count:empty {
