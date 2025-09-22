@@ -10,31 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="faux-cart.js"></script>
+    <body>
+        <header>
+            <nav class="navbar" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="logo-wrapper" aria-label="Bio Shield Repellent Home">
+                    <img src="images/logo.png" alt="Bio Shield Repellent Logo" class="logo-img" />
+                    <span class="logo-text">Bio Shield</span>
+                </a>
+    
+                <ul class="nav-links">
+                    <li><a href="index.html" aria-label="Go to homepage">Home</a></li>
+                    <li><a href="product.html" aria-label="View our products">Products</a></li>
+                    <li><a href="about.html" aria-label="Learn about us">About</a></li>  
+                    <li><a href="cart.html" class="cart-link" aria-label="View shopping cart">
+                        <img src="images/cart.png" alt="Shopping Cart" class="cart-icon" />
+                        <span class="cart-text">Cart</span>
+                        <span id="cartItemCount" class="cart-count" aria-live="polite"></span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
 </head>
-<body>
+
+
+<section class="page-hero">
     <h1>Contact Us</h1>
-    <form action="/submit-form" method="POST">
-
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
-        
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-       
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</body>
-
-</html>
+    <p>We're here to help with any questions or feedback you may have about Bio Shield Repellent products.</p>
+</section>
 <main>
-
-    <!-- Contact Info and Form Section -->
+        <!-- Contact Info and Form Section -->
     <section aria-labelledby="contact-info">
       <address>
         <p>We'd love to hear from you! We will be happy to answer any questions that you may have or feedback you would like to share.</p>
@@ -44,11 +49,11 @@
 
       <article>
         <p><strong>Our Availability!</strong></p>
-        <p>To check for information regarding our <a href="#home">home</a> page.</p>
+        <p>To check for information regarding our <a href="index.html">home</a> page.</p>
         <p>Our customer service team is available Monday through Friday, 8 AM to 7 PM EST.</p>
-        <p>Before contacting us below, check out our products and learn <a href="#">about us</a>.</p>
+        <p>Before contacting us below, check out our products and learn <a href="about.html">about us</a>.</p>
       </article>
-
+      </section>   
       <form action="/submit-form" method="POST">
         <fieldset>
           <legend>Send Us a Message</legend>
@@ -162,41 +167,5 @@
             <a href="terms.html">Terms of Service</a>
         </nav>
     </footer>
-
-    <script>
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const firstName = formData.get('first-name');
-            const inquiryType = formData.get('inquiry-type');
-            
-            // Simple form validation feedback
-            alert(`Thank you, ${firstName}! Your ${inquiryType} inquiry has been received. We'll respond within 24 hours to the email address you provided.`);
-            
-            // Reset form
-            this.reset();
-        });
-
-        // Newsletter form handling
-        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const firstName = formData.get('newsletter-first-name');
-            
-            alert(`Welcome to the Bio Shield community, ${firstName}! You'll receive a confirmation email shortly with your first natural protection tips.`);
-            
-            // Reset form
-            this.reset();
-        });
-
-        // Cart count update
-        document.addEventListener('DOMContentLoaded', function() {
-            updateCartTotals();
-        });
-    </script>
 </body>
 </html>

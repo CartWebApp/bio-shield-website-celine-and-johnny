@@ -20,18 +20,17 @@
             </a>
 
             <ul class="nav-links">
-                <li><a href="index.html" aria-label="Go to homepage">Home</a></li>
                 <li><a href="product.html" aria-label="View our products">Products</a></li>
                 <li><a href="about.html" aria-label="Learn about us">About</a></li>  
             </ul>
         </nav>
     </header>
     
-    <main>
-        <section class="page-hero">
-            <h1>Your Shopping Cart</h1>
-            <p>Review your selected Bio Shield products and proceed to checkout</p>
-        </section>
+    <section class="page-hero">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected Bio Shield products and proceed to checkout</p>
+    </section>
+
         <section class="cart-section">
           
                 <h2 class="section-title">Cart Items</h2>
@@ -41,7 +40,7 @@
             <section id="cart" class="cart-container" aria-live="polite" aria-label="Shopping cart contents">
                 <!-- Cart items will be dynamically inserted here by JavaScript -->
             </section>
-
+            <main>
             <section class="cart-actions" id="cartActions" style="display: none;">
                 <article class="shipping-info">
                     <h3>Shipping Information</h3>
@@ -49,7 +48,7 @@
                     <p>📦 Standard delivery: 3-5 business days</p>
                     <p>⚡ Express delivery: 1-2 business days (+$9.99)</p>
                 </article>
-
+<br>
                 <article class="checkout-section">
                     <h3>Ready to Complete Your Order?</h3>
                     <p>Protect yourself and your loved ones with Bio Shield's natural pest repellent products.</p>
@@ -59,7 +58,8 @@
                     <p class="security-note">🔒 Secure checkout with SSL encryption</p>
                 </article>
             </section>
-
+       </main>
+            </body>
             <section class="continue-shopping">
                 <h3>Need More Protection?</h3>
                 <p>Explore our complete range of natural pest repellent products.</p>
@@ -68,7 +68,7 @@
                 </a>
             </section>
         </section>
-    </main>
+    
 
     <footer>
         <p>&copy; 2024 Bio Shield Repellent. All rights reserved.</p>
@@ -80,51 +80,6 @@
     </footer>
 
     <script>
-        // Additional cart-specific functionality
-        function proceedToCheckout() {
-            // Get cart total for display
-            const [total, itemCount] = cartTotal();
-            
-            if (itemCount === 0) {
-                alert('Your cart is empty. Please add some products before checkout.');
-                window.location.href = 'product.html';
-                return;
-            }
-            
-            // Simple checkout simulation
-            const confirmOrder = confirm(`Proceed to checkout with ${itemCount} item(s) for ${formatCurrency(total)}?\n\nNote: This is a demo - no actual payment will be processed.`);
-            
-            if (confirmOrder) {
-                alert('Thank you for your order! This is a demo, so no actual purchase was made.');
-                // In a real application, you would redirect to a payment processor
-                emptyCart();
-                window.location.href = 'index.html';
-            }
-        }
-
-        // Show/hide cart actions based on cart contents
-        function toggleCartActions() {
-            const cartActions = document.getElementById('cartActions');
-            const [total, itemCount] = cartTotal();
-            
-            if (cartActions) {
-                cartActions.style.display = itemCount > 0 ? 'block' : 'none';
-            }
-        }
-
-        // Override the original updateCart function to include our enhancements
-        const originalUpdateCart = updateCart;
-        updateCart = function() {
-            const result = originalUpdateCart();
-            toggleCartActions();
-            return result;
-        };
-
-        // Initialize cart actions visibility when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait a bit for the original cart to initialize
-            setTimeout(toggleCartActions, 100);
-        });
     </script>
 </body>
 </html>

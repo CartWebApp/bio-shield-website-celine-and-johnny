@@ -291,3 +291,117 @@ document.addEventListener("DOMContentLoaded", () => {
 
       document.getElementById('grandTotal').textContent = '$' + grandTotal.toFixed(2);
   }
+   // Additional cart-specific functionality
+   function proceedToCheckout() {
+    // Get cart total for display
+    const [total, itemCount] = cartTotal();
+    
+    if (itemCount === 0) {
+        alert('Your cart is empty. Please add some products before checkout.');
+        window.location.href = 'product.html';
+        return;
+    }
+    
+    // Simple checkout simulation
+    const confirmOrder = confirm(`Proceed to checkout with ${itemCount} item(s) for ${formatCurrency(total)}?\n\nNote: This is a demo - no actual payment will be processed.`);
+    
+    if (confirmOrder) {
+        alert('Thank you for your order! This is a demo, so no actual purchase was made.');
+        // In a real application, you would redirect to a payment processor
+        emptyCart();
+        window.location.href = 'index.html';
+    }
+}
+
+// Show/hide cart actions based on cart contents
+function toggleCartActions() {
+    const cartActions = document.getElementById('cartActions');
+    const [total, itemCount] = cartTotal();
+    
+    if (cartActions) {
+        cartActions.style.display = itemCount > 0 ? 'block' : 'none';
+    }
+}
+
+// Override the original updateCart function to include our enhancements
+const originalUpdateCart = updateCart;
+updateCart = function() {
+    const result = originalUpdateCart();
+    toggleCartActions();
+    return result;
+};
+
+// Initialize cart actions visibility when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a bit for the original cart to initialize
+    setTimeout(toggleCartActions, 100);
+});
+ // Form submission handling
+ document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(this);
+    const firstName = formData.get('first-name');
+    const inquiryType = formData.get('inquiry-type');
+    
+    // Simple form validation feedback
+    alert(`Thank you, ${firstName}! Your ${inquiryType} inquiry has been received. We'll respond within 24 hours to the email address you provided.`);
+    
+    // Reset form
+    this.reset();
+});
+
+// Newsletter form handling
+document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const firstName = formData.get('newsletter-first-name');
+    
+    alert(`Welcome to the Bio Shield community, ${firstName}! You'll receive a confirmation email shortly with your first natural protection tips.`);
+    
+    // Reset form
+    this.reset();
+});
+
+// Cart count update
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartTotals();
+});
+  // Smooth scrolling for table of contents links
+  document.querySelectorAll('.toc-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Update cart count
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartTotals();
+});
+ // Smooth scrolling for table of contents links
+ document.querySelectorAll('.toc-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Update cart count
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartTotals();
+});
