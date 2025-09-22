@@ -22,29 +22,21 @@
             <ul class="nav-links">
                 <li><a href="index.html" aria-label="Go to homepage">Home</a></li>
                 <li><a href="product.html" aria-label="View our products">Products</a></li>
-                <li><a href="about.html" aria-label="Learn about us">About</a></li>
-                <li>
-                    <a href="cart.html" class="cart-link active" aria-label="View shopping cart">
-                        <img src="images/cart.png" alt="Shopping Cart" class="cart-icon" />
-                        <span class="cart-text">Cart</span>
-                        <span id="cartItemCount" class="cart-count" aria-live="polite"></span>
-                    </a>
-                </li>
+                <li><a href="about.html" aria-label="Learn about us">About</a></li>  
             </ul>
         </nav>
-
+    </header>
+    
+    <main>
         <section class="page-hero">
             <h1>Your Shopping Cart</h1>
             <p>Review your selected Bio Shield products and proceed to checkout</p>
         </section>
-    </header>
-
-    <main>
         <section class="cart-section">
-            <header class="cart-header">
+          
                 <h2 class="section-title">Cart Items</h2>
                 <p class="section-description">Review your items below. You can adjust quantities or remove items before checkout.</p>
-            </header>
+        
             
             <section id="cart" class="cart-container" aria-live="polite" aria-label="Shopping cart contents">
                 <!-- Cart items will be dynamically inserted here by JavaScript -->

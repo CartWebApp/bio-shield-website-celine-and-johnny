@@ -3,68 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css"/>
+    <title>Contact Bio Shield Repellent - Get in Touch</title>
+    <meta name="description" content="Contact Bio Shield Repellent for questions about natural pest protection, product support, or wholesale inquiries. We're here to help!">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="faux-cart.js"></script>
 </head>
 <body>
     <h1>Contact Us</h1>
+    <form action="/submit-form" method="POST">
+
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+       
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+
+</html>
+<main>
 
     <!-- Contact Info and Form Section -->
-     <section class="contact-header">
-            <address>
-        <p>Welcome to our contact page!</p>
-      </address>
-
-      <article>
-        <p><strong>We are here to help!</strong></p>
-        <p>We are looking forward to hear from you and answer any questions that you may have. Use the contact form below to email us with your questions or if you have any comments. We will respond to your questions as soon as possible! You may also join us by filling out the form to stay updated for more news and our products.</p>
-      </article>
-    </section>
-
-<main>    
     <section aria-labelledby="contact-info">
-      <!-- <address>
-        <p>Welcome to our contact page!</p>
+      <address>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
+        <p><strong>(03) 9429 9736</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
       </address>
 
       <article>
-        <p><strong>We are here to help!</strong></p>
-        <p>We are looking forward to hear from you and answer any questions that you may have. Use the contact form below to email us with your questions or if you have any comments. We will respond to your questions as soon as possible! You may also join us by filling out the form to stay updated for more news and our products.</p>
-      </article> -->
+        <p><strong>Our Availability...</strong></p>
+        <p>To check our kitchen menu availability, please visit our <a href="#">Sweet Studio</a> page.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
+        <p>Before contacting us below, check out our product and <a href="#">FAQ pages</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam ex eveniet alias, similique fugit quisquam tenetur sed error modi laborum eligendi! Minus, hic soluta quae quo at laudantium non.</p>
+      </article>
 
       <form action="/submit-form" method="POST">
         <fieldset>
-          <h2>Send Us a Message</h2>
+          <legend>Send Us a Message</legend>
 
-          <section class="form-group">
-            <label for="first-name">First Name <span style="color: red">*</span></label>
-            <input type="text" id="first-name" name="first-name" required>
-          </section>
+                        <section class="form-row">
+                            <section class="form-group">
+                                <label for="first-name">First Name <span class="required">*</span></label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </section>
 
-          <section class="form-group">
-            <label for="last-name">Last Name <span style="color: red">*</span></label>
-            <input type="text" id="last-name" name="last-name" required>
-          </section>
+                            <section class="form-group">
+                                <label for="last-name">Last Name <span class="required">*</span></label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </section>
+                        </section>
 
-          <section class="form-group">
-            <label for="email">Email <span style="color: red">*</span></label>
-            <input type="email" id="email" name="email" required>
-          </section>
+                        <section class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </section>
 
-          <section class="form-group">
-            <label for="message">Message <span style="color: red">*</span></label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </section>
+                        <section class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </section>
 
-          <button type="submit">Send Message</button>
-        </fieldset>
-      </form>
-    </section>
+                        <section class="form-group">
+                            <label for="inquiry-type">Type of Inquiry <span class="required">*</span></label>
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">Please select...</option>
+                                <option value="product-question">Product Question</option>
+                                <option value="ingredient-info">Ingredient Information</option>
+                                <option value="application-help">Application Help</option>
+                                <option value="safety-concern">Safety Concern</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="feedback">Product Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </section>
+
+                        <section class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      placeholder="Please provide details about your question or concern. Include any relevant information such as which product you're asking about, your intended use, or any specific symptoms if reporting a safety concern."></textarea>
+                        </section>
+
+                        <section class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                I'd like to receive updates about new products and natural pest protection tips
+                            </label>
+                        </section>
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                        
+                        <p class="form-note">
+                            <span class="required">*</span> Required fields. We typically respond within 24 hours during business days.
+                        </p>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
 
     <!-- Sidebar Newsletter -->
-    <aside class="Join-us-content">
+    <aside>
       <h2>Stay in touch!</h2>
-      <p>Fill in your details below to receive news, new product info &amp; updates.</p>
+      <p>Fill in your details below to receive seasonal news, new product info &amp; updates.</p>
 
       <form>
         <input type="text" placeholder="First Name" required>
@@ -73,11 +126,78 @@
         <button type="submit">JOIN US</button>
       </form>
 
-      <p class="privacy-note">
-        We respect your privacy and will never share your details with external parties.
-      </p>
-    </aside>
-  </main>
+                <p class="privacy-note">
+                    🔒 We respect your privacy and will never share your details with external parties. You can unsubscribe at any time with one click.
+                </p>
+            </section>
 
+            <section class="contact-hours">
+                <h3>Customer Service Hours</h3>
+                <ul class="hours-list">
+                    <li><strong>Monday - Friday:</strong> 8:00 AM - 7:00 PM EST</li>
+                    <li><strong>Saturday:</strong> 9:00 AM - 5:00 PM EST</li>
+                    <li><strong>Sunday:</strong> Closed</li>
+                </ul>
+                <p class="response-time">💬 Email responses within 24 hours</p>
+                <p class="emergency-note">For urgent safety concerns, please call our 24/7 emergency line: <strong>(555) 911-SAFE</strong></p>
+            </section>
+
+            <section class="social-links">
+                <h3>Follow Us</h3>
+                <p>Stay connected for daily tips, customer stories, and natural protection insights:</p>
+                <ul class="social-list">
+                    <li>🌱 <a href="#" class="social-link">Facebook - Bio Shield Community</a></li>
+                    <li>📸 <a href="#" class="social-link">Instagram - @bioshieldrepellent</a></li>
+                    <li>🐦 <a href="#" class="social-link">Twitter - @BioshieldNatural</a></li>
+                    <li>📺 <a href="#" class="social-link">YouTube - Natural Protection Tips</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bio Shield Repellent. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="contact.html" id="contact" class="active">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const firstName = formData.get('first-name');
+            const inquiryType = formData.get('inquiry-type');
+            
+            // Simple form validation feedback
+            alert(`Thank you, ${firstName}! Your ${inquiryType} inquiry has been received. We'll respond within 24 hours to the email address you provided.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Newsletter form handling
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const firstName = formData.get('newsletter-first-name');
+            
+            alert(`Welcome to the Bio Shield community, ${firstName}! You'll receive a confirmation email shortly with your first natural protection tips.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Cart count update
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartTotals();
+        });
+    </script>
 </body>
 </html>
