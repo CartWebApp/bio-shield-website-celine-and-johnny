@@ -405,3 +405,18 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     updateCartTotals();
 });
+// Form submission handling
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(this);
+    const firstName = formData.get('first-name');
+    const inquiryType = formData.get('inquiry-type');
+    
+    // Simple form validation feedback
+    alert(`Thank you, ${firstName}! Your ${inquiryType} inquiry has been received. We'll respond within 24 hours to the email address you provided.`);
+    
+    // Reset form
+    this.reset();
+});
